@@ -1,0 +1,17 @@
+.task {
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
