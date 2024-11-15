@@ -20,6 +20,7 @@ Task Manager is a simple application to manage and list your tasks.
 - Sort tasks list (newest by time of creation of task, ascending priority i.e low < moderate < high, descending priority i.e high < moderate < low).
 - Mark tasks as completed (if a task is marked completed it will appear with its title lined through).
 - Animation for loading task list is there (added forcefully using setTimeout as there is no real load time since data doesn't actually come from api).
+- This application is responsive for desktops and mobile devices.
 # 2. Technologies
 
 
