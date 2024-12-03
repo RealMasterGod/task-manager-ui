@@ -12,7 +12,9 @@ const TaskForm = () => {
             priority: data.priority === "0" ? "0" : data.priority === "1" ? "1" : "2",
             completed: data.completed ? true : false,
             createdAt: Date.now().toString(),
-            title: data.title.toString()
+            title: data.title.toString(),
+            ...data?.dueDate ? {dueDate: data.dueDate.toString()} : {},
+            ...data?.desc ? {desc: data.desc.toString()} : {}
         } as const
         dispatch(addTask(task))
         e.currentTarget.reset()
@@ -33,6 +35,14 @@ const TaskForm = () => {
                     <option value="1">Moderate</option>
                     <option value="2">Low</option>
                 </select>
+            </div>
+            <div className="flex flex-col">
+                <label htmlFor="">Description</label>
+                <textarea className="bg-slate-50 font-sans p-1" name="desc" id="" rows={2} cols={20}></textarea>
+            </div>
+            <div className="flex flex-col">
+                <label htmlFor="">Due Date</label>
+                <input type="date" min={new Date().toLocaleDateString('en-CA')} name="dueDate" className="bg-slate-50 font-sans font-thin p-2" />
             </div>
             <div className="flex items-center gap-2">
                 <label htmlFor="">Completed</label>
