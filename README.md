@@ -13,12 +13,14 @@ Demo link: https://task-manager-ui-git-main-realmastergods-projects.vercel.app/
 # 1. About The App
 Task Manager is a simple application to manage and list your tasks.
 ## Functionality
-- Create tasks with a title and a priority (high, moderate, low).
+- Create tasks with a title, a priority (high, moderate, low), description (optional) and due date (optional).
 - Priority is marked by a circle with color red (high), yellow (moderate), or green (low).
 - Delete tasks.
+- Edit tasks.
 - Search for tasks from list of tasks (It looks for a title match).
 - Sort tasks list (newest by time of creation of task, ascending priority i.e low < moderate < high, descending priority i.e high < moderate < low).
 - Mark tasks as completed (if a task is marked completed it will appear with its title lined through).
+- Filter tasks based on certain criteria like completed task, pending tasks etc.
 - Animation for loading task list is there (added forcefully using setTimeout as there is no real load time since data doesn't actually come from api).
 - This application is responsive for desktops and mobile devices.
 # 2. Technologies
